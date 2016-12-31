@@ -12,6 +12,12 @@ scripts.
 
 View the [CATALOGUE.md](./CATALOGUE.md) file for a list of all script names, categories and descriptions.
 
+### Usage
+
+1. Clone this repository anywhere inside your Unity `Assets` directory, or alternatively clone to somewhere else and cherry pick your favourite scripts over to Unity
+2. Drag-n-drop a script onto a Unity gameobject
+3. Configure the script's public variables to your liking (hover over any particular property for a description of what effect it will have)
+
 ---
 
 ### Categories
