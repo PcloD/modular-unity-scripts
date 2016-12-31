@@ -1,4 +1,4 @@
-/* Script created by Lachlan McKay 2016
+/* Script created by Lachlan McKay 2016 ©
  * This script spawns an object when this object's particle system collides with a surface
  * Useful for spawning decals when a liquid particle collides with a surface */
 
