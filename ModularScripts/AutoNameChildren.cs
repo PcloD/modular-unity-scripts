@@ -1,4 +1,4 @@
-/* Script created by Lachlan McKay 2016 �
+/* Script created by Lachlan McKay 2016 ©
  * This script numerically names all children objects */
 
 using UnityEngine;
