@@ -7,6 +7,8 @@
 The target audience of these scripts includes unity developers of all skill levels - tooltips should explain public variable functionality as if the user is a complete beginner.
 If nothing else these scripts may serve as a good starting point or reference for more complex / coarse grained scripts.
 
+> Note: I am new on the block, so any feedback or criticisms you have are most welcome :)
+
 ### Catalogue
 
 View the [CATALOGUE.md](./CATALOGUE.md) file for a list of all script names, categories and descriptions.
