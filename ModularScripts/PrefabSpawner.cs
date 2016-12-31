@@ -1,4 +1,4 @@
-/* Script created by Lachlan McKay 2016
+/* Script created by Lachlan McKay 2016 ©
  * This script spawns an object at the location of a target transform
  * Useful for dealing with Unity's inability to create nested prefabs */
 
@@ -43,9 +43,9 @@ public class PrefabSpawner : MonoBehaviour
 	[Tooltip("Display errors in the console.")]
 	public bool debugConsole = false;
 
-	//Credits and description
-	[Header("_Lachlan McKay 2016_")]
-	[TextArea(2,2)]
+    //Credits and description
+    [Header("_© Lachlan McKay 2016_")]
+    [TextArea(2,2)]
 	public string ScriptDescription = "This script spawns an object at the location of a target transform. Useful for dealing with Unity's inability to create nested prefabs.";
     private string ScriptTags = "prefab spawn spawner object create instantiate runtime nested prefabs";
     private string ScriptCategory = "spawning";
