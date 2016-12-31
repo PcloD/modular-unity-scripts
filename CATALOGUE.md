@@ -6,13 +6,13 @@
 
 | name | category | description |
 | --- | --- | --- |
-| Boundary 					|	motion		|	Allows you to clamp the transform of an object
-| Follow					|	motion		|	Maintains the distance between two objects at all times
-| CharacterGibber			|	effect		|	Explodes a transform heirarchy into gibs
-| CloneEmitter				|	effect		|	Clones an object and emits it as if it were a particle
-| DestroyAfterTime			|	spawning	|	Destroy an object after a period of time has elapsed
-| GetDropDownValue			|	space		|	Outputs the value of a dropdown component to a text UI component
-| GetFileOrDirList			|	management	|	Sends a list of file or directory names to a target object as a message
+| [Boundary](./library/Boundary.cs)		|	motion		|	Allows you to clamp the transform of an object
+| Follow								|	motion		|	Maintains the distance between two objects at all times
+| CharacterGibber						|	effect		|	Explodes a transform heirarchy into gibs
+| CloneEmitter							|	effect		|	Clones an object and emits it as if it were a particle
+| DestroyAfterTime						|	spawning	|	Destroy an object after a period of time has elapsed
+| GetDropDownValue						|	space		|	Outputs the value of a dropdown component to a text UI component
+| GetFileOrDirList						|	management	|	Sends a list of file or directory names to a target object as a message
 | ImageWipe					|	effect		|	Scroll images across the screen in any direction
 | LightColorModifier		|	effect		|	Modifies a light's color value based on a gradient over time
 | LightIntensityModifier	|	effect		|	Modifies a light's intensity over time based on a curve
