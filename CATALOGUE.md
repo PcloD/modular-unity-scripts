@@ -7,6 +7,7 @@ Back to [README.md](./README.md)
 
 | name | category | description |
 | --- | --- | --- |
+| [AutoNameChildren](./ModularScripts/AutoNameChildren.cs)             |   management  |   Numerically names all child objects
 | [Boundary](./ModularScripts/Boundary.cs)                             |   motion      |   Allows you to clamp the transform of an object
 | [Follow](./ModularScripts/Follow.cs)                                 |   motion      |   Maintains the distance between two objects at all times
 | [CharacterGibber](./ModularScripts/CharacterGibber.cs)               |   effect      |   Explodes a transform heirarchy into gibs
