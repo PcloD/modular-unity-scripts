@@ -31,8 +31,9 @@ public class MoveTowards : MonoBehaviour
 	public bool destroyObjectOnCompletion = false;
 	public bool destroyScriptOnCompletion = false;
 
-	[Header("Debugging")]
-	public bool debugConsole;
+    //Debugging
+    [Header("Debug Options")]
+    public bool debugConsole;
 
 	//Credits and description
 	[Header("_© Lachlan McKay 2016_")]
