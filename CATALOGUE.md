@@ -30,6 +30,7 @@ Back to [README.md](./README.md)
 | [RandomInterpolator](./ModularScripts/RandomInterpolator.cs)         |   motion      |   Interpolates an object between 2 vectors randomly
 | [RayProjector](./ModularScripts/RayProjector.cs)                     |   spawning    |   Randomly fires raycasts and spawns new objects on ray collision
 | [RotateToVelocity](./ModularScripts/RotateToVelocity.cs)             |   motion      |   Rotates an object to look in the direction of its movement
+| [Scoop](./ModularScripts/Scoop.cs)                                   |   motion      |   When an object enter's this objects trigger or collider, attaches them via fixed joint
 | [ScreenScaler](./ModularScripts/ScreenScaler.cs)                     |   ui          |   Scales a transform or text object based on the size of the viewport
 | [ScriptMessenger](./ModularScripts/ScriptMessenger.cs)               |   messaging   |   Send messages to other scripts or toggle them based on a timer
 | [SpriteCycler](./ModularScripts/SpriteCycler.cs)                     |   effect      |   Cycles through a sprite sheet (atlas) to give the appearance of animation
@@ -37,6 +38,7 @@ Back to [README.md](./README.md)
 | [TrailEmitter](./ModularScripts/TrailEmitter.cs)                     |   effect      |   Generates a trail - has multiple options for representing said trail
 | [TransformConverter](./ModularScripts/TransformConverter.cs)         |   tools       |   Copy an object's transform, but in a different space
 | [TriggerMessage](./ModularScripts/TriggerMessage.cs)                 |   messaging   |   Sends a message to a target when a trigger is activated
+| [Walker](./ModularScripts/Walker.cs)                                 |   motion      |   Moves an object linearly in one direction
 | [WaveArray](./ModularScripts/WaveArray.cs)                           |   effect      |   Generates an array of vectors - must be accessed via another script
 | [WeldObject](./ModularScripts/WeldObject.cs)                         |   motion      |   Sticks an object to another's world position at all times
     
