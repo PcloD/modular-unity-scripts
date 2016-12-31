@@ -65,7 +65,7 @@ public class ScriptMessenger : MonoBehaviour {
 	[TextArea(2,2)]
 	public string ScriptDescription = "This script allows you to send messages to other scripts or toggle them based on a timer.";
     private string ScriptTags = "script messenger timer message trigger";
-    private string ScriptCategory = "trigger";
+    private string ScriptCategory = "messaging";
 
     void Start () {
 		Setup();
