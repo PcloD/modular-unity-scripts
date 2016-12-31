@@ -1,4 +1,4 @@
-/* Script created by Lachlan McKay 2016 �
+/* Script created by Lachlan McKay 2016 ©
 * This script moves an object linearly in one direction */
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public class Walker : MonoBehaviour {
     public Color rayColour = Color.red;
 
     //Credits and description
-    [Header("_� Lachlan McKay 2016_")]
+    [Header("_© Lachlan McKay 2016_")]
     [TextArea(2, 2)]
     public string ScriptDescription = "This script moves an object linearly in one direction.";
     private string ScriptTags = "walker move motion movement speed engine simple linear direction path go travel";

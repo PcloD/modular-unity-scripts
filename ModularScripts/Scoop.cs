@@ -1,4 +1,4 @@
-/* Script created by Lachlan McKay 2016 �
+/* Script created by Lachlan McKay 2016 ©
  * This script attaches two rigidbodies via fixed joint on collision or trigger
  * Useful for charging enemies that pin the player etc. */
 
@@ -34,7 +34,7 @@ public class Scoop : MonoBehaviour {
     public bool checkExisting = true;
 
     //Credits and description
-    [Header("_� Lachlan McKay 2016_")]
+    [Header("_© Lachlan McKay 2016_")]
     [TextArea(2, 2)]
     public string ScriptDescription = "This script attaches two rigidbodies via fixed joint on collision or trigger.";
     private string ScriptTags = "scoop fixed joint attach weld join pin charge magnet stick grab hold clasp";
