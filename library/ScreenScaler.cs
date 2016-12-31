@@ -85,7 +85,7 @@ public class ScreenScaler : MonoBehaviour
 	[TextArea(2,2)]
 	public string ScriptDescription = "This script allows you to scale a transform, canvas text, or legacy GUIText based on the size of the viewport.";
     private string ScriptTags = "screen scaler scale size text viewport resize";
-    private string ScriptCategory = "screen";
+    private string ScriptCategory = "ui";
 
     //Private 
     private Vector2 screenScaleVector;	//Multiplier vector of how much the screen has grown / shrank since start

@@ -36,7 +36,7 @@ public class TransformConverter : MonoBehaviour
 	[TextArea(2,2)]
 	public string ScriptDescription = "This script allows you make an object have the same transform as another, but in a different world/camera/viewport space. Hover over any property name for a description of its function.";
     private string ScriptTags = "transform converter convert space position pos health bar ui float";
-    private string ScriptCategory = "screen";
+    private string ScriptCategory = "tools";
 
     //Private
     private bool active = false;

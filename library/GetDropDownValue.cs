@@ -38,7 +38,7 @@ public class GetDropDownValue : MonoBehaviour {
     [TextArea(2, 2)]
     public string ScriptDescription = "This script outputs the currently selected option value of a dropdown component to a text UI component.";
     private string ScriptTags = "get drop down info dropdown option value to text ui display selected select";
-    private string ScriptCategory = "screen";
+    private string ScriptCategory = "ui";
 
     [System.NonSerialized] public int currentIndex;
     [System.NonSerialized] public int currentCount;

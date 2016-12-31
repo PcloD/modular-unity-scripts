@@ -27,7 +27,7 @@ public class PopulateDropDown : MonoBehaviour {
     [TextArea(2, 2)]
     public string ScriptDescription = "This script populates a target dropdown component with specified text/image values.";
     private string ScriptTags = "populate dropdown ui drop down control option options value change modify text image";
-    private string ScriptCategory = "screen";
+    private string ScriptCategory = "ui";
 
     void Start()
     {

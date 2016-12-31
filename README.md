@@ -18,12 +18,13 @@ View the [CATALOGUE.md](./CATALOGUE.md) file for a list of all script names, cat
 
 | name | description |
 | --- | --- |
-| `motion` | gameobject/character movement whether it be transform or physics based |
-| `messaging` | event/script triggering based on a condition - send messaging when entered a collider etc. |
-| `space` | scripts related to space conversions / UI etc. |
-| `effect` | visual effects - aesthetic stuff that looks pretty |
-| `management` | object/file management - toggling / renaming of objects etc. |
-| `spawning` | instantiation and destruction of objects
+| `effect`      | visual effects - aesthetic stuff that looks pretty |
+| `management`  | object/file management - toggling / renaming of objects etc. |
+| `messaging`   | event/script triggering based on a condition - send messaging when entered a collider etc. |
+| `motion`      | gameobject/character movement whether it be transform or physics based |
+| `spawning`    | instantiation and destruction of objects |
+| `tools`       | handy miscellaneous scripts |
+| `ui`          | 2D legacy GUI and unity canvas scripts |
 
 ---
 
