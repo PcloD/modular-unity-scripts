@@ -27,6 +27,7 @@ Back to [README.md](./README.md)
 | [PixelScrambler](./ModularScripts/PixelScrambler.cs)                 |   effect      |   Scrambles the pixels of a texture randomly
 | [PopulateDropDown](./ModularScripts/PopulateDropDown.cs)             |   ui          |   Populates a target dropdown component with specified text/image values
 | [PrefabSpawner](./ModularScripts/PrefabSpawner.cs)                   |   spawning    |   Spawns an object at the location of a target transform
+| [RagdollBlaster](./ModularScripts/RagdollBlaster.cs)                 |   motion      |   Recursively applies force to child rigidbodies
 | [RandomInterpolator](./ModularScripts/RandomInterpolator.cs)         |   motion      |   Interpolates an object between 2 vectors randomly
 | [RayProjector](./ModularScripts/RayProjector.cs)                     |   spawning    |   Randomly fires raycasts and spawns new objects on ray collision
 | [RotateToVelocity](./ModularScripts/RotateToVelocity.cs)             |   motion      |   Rotates an object to look in the direction of its movement
