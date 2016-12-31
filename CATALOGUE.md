@@ -33,6 +33,7 @@ Back to [README.md](./README.md)
 | [Scoop](./ModularScripts/Scoop.cs)                                   |   motion      |   Attaches two rigidbodies via fixed joint on collision or trigger
 | [ScreenScaler](./ModularScripts/ScreenScaler.cs)                     |   ui          |   Scales a transform or text object based on the size of the viewport
 | [ScriptMessenger](./ModularScripts/ScriptMessenger.cs)               |   messaging   |   Send messages to other scripts or toggle them based on a timer
+| [Sink](./ModularScripts/Sink.cs)                                     |   spawning    |   Sinks objects into the ground after a set time
 | [SpriteCycler](./ModularScripts/SpriteCycler.cs)                     |   effect      |   Cycles through a sprite sheet (atlas) to give the appearance of animation
 | [Toggle](./ModularScripts/Toggle.cs)                                 |   management  |   Toggles an object's active state when told by another script / button
 | [TrailEmitter](./ModularScripts/TrailEmitter.cs)                     |   effect      |   Generates a trail - has multiple options for representing said trail
