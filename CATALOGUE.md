@@ -36,6 +36,7 @@ Back to [README.md](./README.md)
 | [Toggle](./ModularScripts/Toggle.cs)                                 |   management  |   Toggles an object's active state when told by another script / button
 | [TrailEmitter](./ModularScripts/TrailEmitter.cs)                     |   effect      |   Generates a trail - has multiple options for representing said trail
 | [TransformConverter](./ModularScripts/TransformConverter.cs)         |   tools       |   Copy an object's transform, but in a different space
+| [TriggerMessage](./ModularScripts/TriggerMessage.cs)                 |   messaging   |   Sends a message to a target when a trigger is activated
 | [WaveArray](./ModularScripts/WaveArray.cs)                           |   effect      |   Generates an array of vectors - must be accessed via another script
 | [WeldObject](./ModularScripts/WeldObject.cs)                         |   motion      |   Sticks an object to another's world position at all times
     
