@@ -24,7 +24,8 @@ If you want to quickly generate a template that follows the script conventions o
 1. Clone this repository and place the `Editor` folder inside the **root** of your Unity Project's `Assets` directory
 2. Choose `Edit->Generate Self-Describing C# Script`
 3. Choose a directory for your new script
-4. Rename both the `NewScript` filename as well as the `public class **NewScript**` (note: they must be the same)
+4. Rename both the `NewScript` filename as well as the `public class NewScript` (note: they must be the same)
+5. Update relevant details seen in template document (script description etc.)
 
 ---
 
