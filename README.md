@@ -3,10 +3,9 @@
 
 ### Preface
 
-> The idea is to speed up unity developer workflow by providing ready-made scripts that can be quickly dropped on an
-object and then set up *exclusively* through easy to understand public variables.
-If nothing else these scripts may serve as a good starting point or reference for more complex / coarse grained
-scripts.
+> The idea is to speed up unity developer workflow by providing ready-made scripts that can be quickly dropped on an object and then set up *exclusively* through easy to understand public variables.
+The target audience of these scripts includes unity developers of all skill levels - tooltips should explain public variable functionality as if the user is a complete beginner.
+If nothing else these scripts may serve as a good starting point or reference for more complex / coarse grained scripts.
 
 ### Catalogue
 
@@ -14,9 +13,18 @@ View the [CATALOGUE.md](./CATALOGUE.md) file for a list of all script names, cat
 
 ### Usage
 
-1. Clone this repository anywhere inside your Unity `Assets` directory, or alternatively clone to somewhere else and cherry pick your favourite scripts over to Unity
+1. Clone this repository and place the `ModularScripts` folder inside your Unity Project's `Assets` directory
 2. Drag-n-drop a script onto a Unity gameobject
 3. Configure the script's public variables to your liking (hover over any particular property for a description of what effect it will have)
+
+### DIY Template
+
+If you want to quickly generate a template that follows the script conventions outlined at the bottom of this readme, follow these steps:
+
+1. Clone this repository and place the `Editor` folder inside the **root** of your Unity Project's `Assets` directory
+2. Choose `Edit->Generate Self-Describing C# Script`
+3. Choose a directory for your new script
+4. Rename both the `NewScript` filename as well as the `public class **NewScript**` (note: they must be the same)
 
 ---
 

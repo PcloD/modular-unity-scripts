@@ -42,7 +42,7 @@ public class Boundary : MonoBehaviour {
 
 	void Setup() {
 
-		if(!affectedObject) {
+	    if(!affectedObject) {
 			affectedObject = transform;
 		}
 
