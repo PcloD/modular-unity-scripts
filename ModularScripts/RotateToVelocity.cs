@@ -35,8 +35,10 @@ public class RotateToVelocity : MonoBehaviour
 
 	[Header("Clamping")]
 	[Tooltip("Clamp the rotation of the Apply Rotation To transform? Useful for ignoring velocity changes on a certain axis.")]
-	public bool clampLookVector = false;
-	[Tooltip("(Minimum, Maximum)")]
+	public bool clampRotVectorX = false;
+    public bool clampRotVectorY = false;
+    public bool clampRotVectorZ = false;
+    [Tooltip("(Minimum, Maximum)")]
 	public Vector2 clampX;
 	[Tooltip("(Minimum, Maximum)")]
 	public Vector2 clampY;
@@ -65,7 +67,7 @@ public class RotateToVelocity : MonoBehaviour
     private string ScriptTags = "rotate to velocity movement rotation rot transform aim";
     private string ScriptCategory = "motion";
 
-    private bool active;
+    private bool active = true;
 
     void Start () {
 		Setup();
@@ -81,7 +83,6 @@ public class RotateToVelocity : MonoBehaviour
 		if(!applyRotationTo) {
 			applyRotationTo = transform;
 		}
-
 	}
 
 	void Update () {
@@ -137,17 +138,14 @@ public class RotateToVelocity : MonoBehaviour
 	//Clamps the targetRotation to be within the inspector clamp values
 	void Clamp() {
 
-		if(clampLookVector) {
+        Vector3 targetVector = targetRotation.eulerAngles;
 
-			Vector3 targetVector = targetRotation.eulerAngles;
+        if (clampRotVectorX) { targetVector.x = Mathf.Clamp(targetVector.x, clampX.x, clampX.y); }
+        if (clampRotVectorY) { targetVector.y = Mathf.Clamp(targetVector.y, clampY.x, clampY.y); }
+        if (clampRotVectorZ) { targetVector.z = Mathf.Clamp(targetVector.z, clampZ.x, clampZ.y); }
 
-			targetVector.x = Mathf.Clamp(targetVector.x, clampX.x, clampX.y);
-			targetVector.y = Mathf.Clamp(targetVector.y, clampY.x, clampY.y);
-			targetVector.z = Mathf.Clamp(targetVector.z, clampZ.x, clampZ.y);
-
-			targetRotation = Quaternion.Euler(targetVector);
-		}
-	}
+        targetRotation = Quaternion.Euler(targetVector);
+    }
 
 	//Applies a given rotation to the applyRotation to transform based on the rotateSpace dropdown in the inspector
 	void ApplyRotation(Quaternion rot) {

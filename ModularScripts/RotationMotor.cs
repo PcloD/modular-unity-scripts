@@ -46,6 +46,7 @@ public class RotationMotor : MonoBehaviour
 		if(!rotateAround) {
 			rotateAround = affectedObject;
 		}
+        if(!commandActivated) { active = true; }
 	}
 
 	void Update () {
