@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class RandomInterpolator : MonoBehaviour, ScriptLoadingInterface
+public class RandomInterpolator : MonoBehaviour
 {
 
 	[Header("Main Options")]
