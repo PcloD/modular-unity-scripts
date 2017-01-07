@@ -24,6 +24,9 @@ public class TriggerMessage : MonoBehaviour {
     public bool requireTag;
     public string requiredTag;
 
+    [Header("Layers")]
+    public LayerMask acceptedLayers;
+
     //Debugging
     [Header("Debug Options")]
     public bool debugConsole = false;
@@ -36,9 +39,9 @@ public class TriggerMessage : MonoBehaviour {
     private string ScriptCategory = "messaging";
 
     //Executes script functionality
-    void Execute(string inTag)
+    void Execute(string inTag, int inLayer)
     {
-        if (inTag == requiredTag || !requireTag)
+        if ((inTag == requiredTag || !requireTag) && (acceptedLayers == (acceptedLayers | (1 << inLayer))))
         {
             if (debugConsole) { print("InTag: " + inTag + " equals: " + requiredTag); }
             targetObject.SendMessage(message, parameters);
@@ -52,7 +55,16 @@ public class TriggerMessage : MonoBehaviour {
         if (onEnter)
         {
             if(debugConsole) { print("OnTriggerEnter triggered"); }
-            Execute(col.tag);
+            Execute(col.tag, col.gameObject.layer);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (onEnter)
+        {
+            if (debugConsole) { print("OnTriggerEnter2D triggered"); }
+            Execute(col.tag, col.gameObject.layer);
         }
     }
 
@@ -61,7 +73,16 @@ public class TriggerMessage : MonoBehaviour {
         if (onStay)
         {
             if (debugConsole) { print("OnTriggerStay triggered"); }
-            Execute(col.tag);
+            Execute(col.tag, col.gameObject.layer);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (onStay)
+        {
+            if (debugConsole) { print("OnTriggerStay2D triggered"); }
+            Execute(col.tag, col.gameObject.layer);
         }
     }
 
@@ -70,7 +91,16 @@ public class TriggerMessage : MonoBehaviour {
         if (onExit)
         {
             if (debugConsole) { print("OnTriggerExit triggered"); }
-            Execute(col.tag);
+            Execute(col.tag, col.gameObject.layer);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (onExit)
+        {
+            if (debugConsole) { print("OnTriggerExit2D triggered"); }
+            Execute(col.tag, col.gameObject.layer);
         }
     }
 
@@ -79,7 +109,16 @@ public class TriggerMessage : MonoBehaviour {
         if (onEnter)
         {
             if (debugConsole) { print("OnCollisionEnter triggered"); }
-            Execute(col.collider.tag);
+            Execute(col.collider.tag, col.collider.gameObject.layer);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (onEnter)
+        {
+            if (debugConsole) { print("OnCollisionEnter2D triggered"); }
+            Execute(col.collider.tag, col.collider.gameObject.layer);
         }
     }
 
@@ -88,15 +127,34 @@ public class TriggerMessage : MonoBehaviour {
         if (onStay)
         {
             if (debugConsole) { print("OnCollisionStay triggered"); }
-            Execute(col.collider.tag);
+            Execute(col.collider.tag, col.collider.gameObject.layer);
         }
     }
+
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (onStay)
+        {
+            if (debugConsole) { print("OnCollisionStay2D triggered"); }
+            Execute(col.collider.tag, col.collider.gameObject.layer);
+        }
+    }
+
     void OnCollisionExit(Collision col)
     {
         if (onExit)
         {
             if (debugConsole) { print("OnCollisionExit triggered"); }
-            Execute(col.collider.tag);
+            Execute(col.collider.tag, col.collider.gameObject.layer);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (onExit)
+        {
+            if (debugConsole) { print("OnCollisionExit2D triggered"); }
+            Execute(col.collider.tag, col.collider.gameObject.layer);
         }
     }
 }
