@@ -40,10 +40,12 @@ public class RandomInterpolator : MonoBehaviour
 		
 		[Header("Limits")]
 		public Vector3 minimumVector = Vector3.zero;
-		public Vector3 maximumVector = Vector3.one;
-		public bool hardClamp = true;
-		
-	}
+		public Vector3 maximumVector = Vector3.zero;
+		public bool hardClampX = false;
+        public bool hardClampY = false;
+        public bool hardClampZ = false;
+
+    }
 	
 	public RandomRotatorUniversalSettings UniversalSettings = new RandomRotatorUniversalSettings();
 
@@ -285,19 +287,19 @@ public class RandomInterpolator : MonoBehaviour
 	void HardClamping() {
 
 		//Hard Clamping
-		if(UniversalSettings.hardClamp) {
-
+		if(UniversalSettings.hardClampX || UniversalSettings.hardClampY || UniversalSettings.hardClampZ) {
 			clampVector = GetAxis();
-
-			clampVector.x = Mathf.Clamp(clampVector.x, UniversalSettings.minimumVector.x, UniversalSettings.maximumVector.x);
-			clampVector.y = Mathf.Clamp(clampVector.y, UniversalSettings.minimumVector.y, UniversalSettings.maximumVector.y);
-			clampVector.z = Mathf.Clamp(clampVector.z, UniversalSettings.minimumVector.z, UniversalSettings.maximumVector.z);
-
-			SetAxis(clampVector);
-			
 		}
 
-	}
+        if (UniversalSettings.hardClampX) { clampVector.x = Mathf.Clamp(clampVector.x, UniversalSettings.minimumVector.x, UniversalSettings.maximumVector.x); }
+        if (UniversalSettings.hardClampY) { clampVector.y = Mathf.Clamp(clampVector.y, UniversalSettings.minimumVector.y, UniversalSettings.maximumVector.y); }
+        if (UniversalSettings.hardClampZ) { clampVector.z = Mathf.Clamp(clampVector.z, UniversalSettings.minimumVector.z, UniversalSettings.maximumVector.z); }
+
+        if (UniversalSettings.hardClampX || UniversalSettings.hardClampY || UniversalSettings.hardClampZ)
+        {
+            SetAxis(clampVector);
+        }
+    }
 	
 	IEnumerator GenerateNewRandomVector() {
 
